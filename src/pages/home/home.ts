@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-// import { NavController } from 'ionic-angular';
 import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser';
 
 @Component({
@@ -21,11 +20,11 @@ export class HomePage {
       location: 'no',
       zoom: 'no',
       shouldPauseOnSuspend: 'yes',
-      closebuttoncaption: '',
+      // closebuttoncaption: '',
       toolbar: 'no',
       enableViewportScale: 'yes',
-      suppressesIncrementalRendering: 'yes',
-      fullscreen: 'yes'
+      suppressesIncrementalRendering: 'yes'
+      // fullscreen: 'yes'
     };
     this.browser = this.iab.create("http://kimtutoring.com/mobile/", "_self", iabOptions);
     this.browser.show();
